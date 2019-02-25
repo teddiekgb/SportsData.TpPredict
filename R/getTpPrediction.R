@@ -3,7 +3,7 @@ library(foreign)
 library(nnet)
 
 # load the saved model
-load("data/my_model2.rda")
+load("data/my_model3.rda")
 
 getTpPrediction <- function(AWAY_EFG, AWAY_TOVr, AWAY_OREBr, AWAY_DREBr, AWAY_FTF, AWAY_oEFG, AWAY_oTOVr, AWAY_oFTF, HOME_EFG, HOME_TOVr, HOME_OREBr, HOME_DREBr, HOME_FTF, HOME_oEFG, HOME_oTOVr, HOME_oFTF) {
 
