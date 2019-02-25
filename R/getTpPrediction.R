@@ -60,7 +60,7 @@ getTpPrediction <- function(AWAY_EFG, AWAY_TOVr, AWAY_OREBr, AWAY_DREBr, AWAY_FT
   # use multinomial logit models to predict games in training set
   for (i in rownames(m)) {
     #print(i)
-    if (is.numeric(logit_models[[i]][[1]])) {
+    if (class(logit_models[[i]]) == "list") {
       next
     }
     temp_predict <- as.list(predict(returnData="TRUE", logit_models[[i]], type="probs", newdata=df_inputs))
