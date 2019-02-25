@@ -1,10 +1,7 @@
-# libraries
-library(nnet)
-
-# load the saved model
-#load("logit_models")
-
 getTpPrediction <- function(AWAY_EFG, AWAY_TOVr, AWAY_OREBr, AWAY_DREBr, AWAY_FTF, AWAY_oEFG, AWAY_oTOVr, AWAY_oFTF, HOME_EFG, HOME_TOVr, HOME_OREBr, HOME_DREBr, HOME_FTF, HOME_oEFG, HOME_oTOVr, HOME_oFTF) {
+
+  # libraries
+  library(nnet)
 
   # turn inputs into new data data frame
   df_inputs <- as.data.frame(list("AWAY_EFG" = AWAY_EFG, "AWAY_TOVr" = AWAY_TOVr, "AWAY_OREBr" = AWAY_OREBr,
