@@ -72,6 +72,6 @@ getTpPrediction <- function(AWAY_EFG, AWAY_TOVr, AWAY_OREBr, AWAY_DREBr, AWAY_FT
   }
 
   # return predicted transition matrix
-  return(m)
+  return(as.data.frame(m))
 
 }
