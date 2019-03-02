@@ -72,7 +72,7 @@ getTpPrediction <- function(AWAY_EFG, AWAY_TOVr, AWAY_OREBr, AWAY_DREBr, AWAY_FT
   }
 
   # convert matrix to a named nested list
-  m <- as.list(as.data.frame(m))
+  m <- as.list(as.data.frame(t(m)))
   for (i in names(m)) {
     m[[i]] <- as.list(m[[i]])
     names(m[[i]]) <- states_temp
